@@ -3,7 +3,8 @@
 #if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGIntegrationFactory.h>
 #else
-#import <Segment/SEGIntegrationFactory.h>
+//#import <Segment/SEGIntegrationFactory.h>
+@import Segment;
 #endif
 
 @interface SEGMixpanelIntegrationFactory : NSObject <SEGIntegrationFactory>

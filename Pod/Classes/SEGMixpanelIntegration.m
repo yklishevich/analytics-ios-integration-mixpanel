@@ -4,7 +4,8 @@
 #if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGAnalyticsUtils.h>
 #else
-#import <Segment/SEGAnalyticsUtils.h>
+//#import <Segment/SEGAnalyticsUtils.h>
+@import Segment;
 #endif
 
 @implementation SEGMixpanelIntegration
@@ -25,9 +26,7 @@
     if (self = [super init]) {
         self.settings = settings;
         NSString *token = [self.settings objectForKey:@"token"];
-        self.mixpanel = [Mixpanel sharedInstanceWithToken:(NSString *)token trackAutomaticEvents:false
-                optOutTrackingByDefault:false
-        ];
+        self.mixpanel = [Mixpanel sharedInstanceWithToken:false trackCrashes:true];
     }
     
     NSString *EUEndpointValue = [self.settings objectForKey:@"enableEuropeanUnionEndpoint"];

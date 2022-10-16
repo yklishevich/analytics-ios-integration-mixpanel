@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "analytics-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/analytics-ios",
+      "state" : {
+        "revision" : "fc64997865619f73bbab196c164f7845a13da110",
+        "version" : "4.1.6"
+      }
+    },
+    {
+      "identity" : "mixpanel-iphone",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mixpanel/mixpanel-iphone",
+      "state" : {
+        "revision" : "2b99fd8f2b3db544059101090aeccaad1bfb0e59",
+        "version" : "4.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
